@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/1/trunk/modulos/personal
+END
+orden_file_proc.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/1/trunk/modulos/personal/orden_file_proc.php
+END
+nuevo_sumario.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1/trunk/modulos/personal/nuevo_sumario.php
+END
+directorio_detalle.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1/trunk/modulos/personal/directorio_detalle.php
+END
+justificar_inasistencia.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1/trunk/modulos/personal/justificar_inasistencia.php
+END
+listado_evaluaciones.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1/trunk/modulos/personal/listado_evaluaciones.php
+END
+subir_archivo_sumario.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1/trunk/modulos/personal/subir_archivo_sumario.php
+END
+mostrar_ocultos.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/1/trunk/modulos/personal/mostrar_ocultos.php
+END
+capacitaciones_detalle.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/1/trunk/modulos/personal/capacitaciones_detalle.php
+END
+asistencia_stats.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1/trunk/modulos/personal/asistencia_stats.php
+END
+informe_asistencia.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1/trunk/modulos/personal/informe_asistencia.php
+END
+listado_legajos.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/1/trunk/modulos/personal/listado_legajos.php
+END
+directorio.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/1/trunk/modulos/personal/directorio.php
+END
+modificar_evaluacion.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1/trunk/modulos/personal/modificar_evaluacion.php
+END
+accidente_lab_admin.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/1/trunk/modulos/personal/accidente_lab_admin.php
+END
+capacitaciones.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1/trunk/modulos/personal/capacitaciones.php
+END
+gutils.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/1/trunk/modulos/personal/gutils.php
+END
+control_presentismo.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/1/trunk/modulos/personal/control_presentismo.php
+END
+evaluadores.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/1/trunk/modulos/personal/evaluadores.php
+END
+capacitados.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/1/trunk/modulos/personal/capacitados.php
+END
+modificar_legajo.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1/trunk/modulos/personal/modificar_legajo.php
+END
+editar_hora.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/1/trunk/modulos/personal/editar_hora.php
+END
+reporte_asistencia.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1/trunk/modulos/personal/reporte_asistencia.php
+END
+adelanto_cuenta.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/1/trunk/modulos/personal/adelanto_cuenta.php
+END
+reporte_asistencia_mes.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/1/trunk/modulos/personal/reporte_asistencia_mes.php
+END

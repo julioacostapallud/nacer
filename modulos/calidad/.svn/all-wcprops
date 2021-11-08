@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/118/trunk/modulos/calidad
+END
+indicadores_globales.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/94/trunk/modulos/calidad/indicadores_globales.php
+END
+indicadores_ins.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/91/trunk/modulos/calidad/indicadores_ins.php
+END
+ins_dpto_excel.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1/trunk/modulos/calidad/ins_dpto_excel.php
+END
+listado_beneficiarios_cal.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1/trunk/modulos/calidad/listado_beneficiarios_cal.php
+END
+pac_pap_actualiza_log.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1/trunk/modulos/calidad/pac_pap_actualiza_log.php
+END
+cuadro_de_mando.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1/trunk/modulos/calidad/cuadro_de_mando.php
+END
+detalle_trazadoras.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/1/trunk/modulos/calidad/detalle_trazadoras.php
+END
+detalle_manual.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1/trunk/modulos/calidad/detalle_manual.php
+END
+reporte_n_op_1_excel_1.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/118/trunk/modulos/calidad/reporte_n_op_1_excel_1.php
+END
+nuevo_evento.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/1/trunk/modulos/calidad/nuevo_evento.php
+END
+reporte_n_op_1_excel_2.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/118/trunk/modulos/calidad/reporte_n_op_1_excel_2.php
+END
+ins_dpto.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/1/trunk/modulos/calidad/ins_dpto.php
+END
+reporte_n_op_1_grp_small_1.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/118/trunk/modulos/calidad/reporte_n_op_1_grp_small_1.php
+END
+listado_manual.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1/trunk/modulos/calidad/listado_manual.php
+END
+reporte_n_op_1_grp_small_2.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/118/trunk/modulos/calidad/reporte_n_op_1_grp_small_2.php
+END
+reporte_n_op_1_grp_small_3.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/118/trunk/modulos/calidad/reporte_n_op_1_grp_small_3.php
+END
+reporte_n_op_1_grp_small_4.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/118/trunk/modulos/calidad/reporte_n_op_1_grp_small_4.php
+END
+indicadores_guardar_ins.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/1/trunk/modulos/calidad/indicadores_guardar_ins.php
+END
+pac_pap.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/1/trunk/modulos/calidad/pac_pap.php
+END
+detalle_prestaciones_cal.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1/trunk/modulos/calidad/detalle_prestaciones_cal.php
+END
+reporte_n_op_1.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/118/trunk/modulos/calidad/reporte_n_op_1.php
+END
+reporte_n_op_1_grp_large_1.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/118/trunk/modulos/calidad/reporte_n_op_1_grp_large_1.php
+END
+indicadores_grafico.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1/trunk/modulos/calidad/indicadores_grafico.php
+END
+reporte_n_op_1_grp_large_2.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/118/trunk/modulos/calidad/reporte_n_op_1_grp_large_2.php
+END
+reporte_n_op_1_grp_large_3.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/118/trunk/modulos/calidad/reporte_n_op_1_grp_large_3.php
+END
+reporte_n_op_1_grp_large_4.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/118/trunk/modulos/calidad/reporte_n_op_1_grp_large_4.php
+END
+listado_pac_pap.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1/trunk/modulos/calidad/listado_pac_pap.php
+END
+cuadro_de_mando_excel.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1/trunk/modulos/calidad/cuadro_de_mando_excel.php
+END
+ins_dpto_per.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/1/trunk/modulos/calidad/ins_dpto_per.php
+END
+ins_dpto_admin.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/94/trunk/modulos/calidad/ins_dpto_admin.php
+END
+eventos_incidentes.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/1/trunk/modulos/calidad/eventos_incidentes.php
+END
+indicadores_grafico_int.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/1/trunk/modulos/calidad/indicadores_grafico_int.php
+END

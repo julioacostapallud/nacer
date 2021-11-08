@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/193/trunk/modulos/permisos
+END
+acl_list.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/1/trunk/modulos/permisos/acl_list.php
+END
+object_search.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1/trunk/modulos/permisos/object_search.php
+END
+permisos-usr_proc.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/1/trunk/modulos/permisos/permisos-usr_proc.php
+END
+edit_objects.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/1/trunk/modulos/permisos/edit_objects.php
+END
+acl_test.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/1/trunk/modulos/permisos/acl_test.php
+END
+setup.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/1/trunk/modulos/permisos/setup.php
+END
+assign_group.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/1/trunk/modulos/permisos/assign_group.php
+END
+edit_group.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/1/trunk/modulos/permisos/edit_group.php
+END
+permisos.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/193/trunk/modulos/permisos/permisos.php
+END
+lista_grp_xml.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1/trunk/modulos/permisos/lista_grp_xml.php
+END
+group_admin.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/1/trunk/modulos/permisos/group_admin.php
+END
+profiler.inc
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/1/trunk/modulos/permisos/profiler.inc
+END
+permisos_main.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/193/trunk/modulos/permisos/permisos_main.php
+END
+permisos.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1/trunk/modulos/permisos/permisos.class.php
+END
+acl_debug.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/1/trunk/modulos/permisos/acl_debug.php
+END
+cambiar_usuario.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/1/trunk/modulos/permisos/cambiar_usuario.php
+END
+generar_menu.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/1/trunk/modulos/permisos/generar_menu.php
+END
+acl_admin.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/1/trunk/modulos/permisos/acl_admin.php
+END
+permisos-usr.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/193/trunk/modulos/permisos/permisos-usr.php
+END
+permisos.xml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/205/trunk/modulos/permisos/permisos.xml
+END
+permisos-grp_proc.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/1/trunk/modulos/permisos/permisos-grp_proc.php
+END
+s.gif
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/1/trunk/modulos/permisos/s.gif
+END
+actualizar_permisos.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/1/trunk/modulos/permisos/actualizar_permisos.php
+END
+permisos_xml.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/13/trunk/modulos/permisos/permisos_xml.php
+END
+edit_object_sections.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1/trunk/modulos/permisos/edit_object_sections.php
+END
+permisos_proc.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1/trunk/modulos/permisos/permisos_proc.php
+END
+lista_usr_xml.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1/trunk/modulos/permisos/lista_usr_xml.php
+END
+gacl_admin.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1/trunk/modulos/permisos/gacl_admin.inc.php
+END
+permisos-grp.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/1/trunk/modulos/permisos/permisos-grp.php
+END

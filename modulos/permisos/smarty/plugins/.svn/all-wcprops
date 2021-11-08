@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/1/trunk/modulos/permisos/smarty/plugins
+END
+modifier.spacify.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/1/trunk/modulos/permisos/smarty/plugins/modifier.spacify.php
+END
+modifier.count_sentences.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/1/trunk/modulos/permisos/smarty/plugins/modifier.count_sentences.php
+END
+modifier.count_paragraphs.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/1/trunk/modulos/permisos/smarty/plugins/modifier.count_paragraphs.php
+END
+modifier.escape.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/1/trunk/modulos/permisos/smarty/plugins/modifier.escape.php
+END
+modifier.count_words.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/1/trunk/modulos/permisos/smarty/plugins/modifier.count_words.php
+END
+modifier.debug_print_var.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/1/trunk/modulos/permisos/smarty/plugins/modifier.debug_print_var.php
+END
+function.assign.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/1/trunk/modulos/permisos/smarty/plugins/function.assign.php
+END
+modifier.replace.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/1/trunk/modulos/permisos/smarty/plugins/modifier.replace.php
+END
+function.eval.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/1/trunk/modulos/permisos/smarty/plugins/function.eval.php
+END
+modifier.string_format.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/1/trunk/modulos/permisos/smarty/plugins/modifier.string_format.php
+END
+modifier.strip_tags.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/1/trunk/modulos/permisos/smarty/plugins/modifier.strip_tags.php
+END
+modifier.default.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/1/trunk/modulos/permisos/smarty/plugins/modifier.default.php
+END
+modifier.capitalize.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/1/trunk/modulos/permisos/smarty/plugins/modifier.capitalize.php
+END
+modifier.date_format.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/1/trunk/modulos/permisos/smarty/plugins/modifier.date_format.php
+END
+function.cycle.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/1/trunk/modulos/permisos/smarty/plugins/function.cycle.php
+END
+modifier.count_characters.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/1/trunk/modulos/permisos/smarty/plugins/modifier.count_characters.php
+END
+modifier.lower.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/1/trunk/modulos/permisos/smarty/plugins/modifier.lower.php
+END
+function.popup.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/1/trunk/modulos/permisos/smarty/plugins/function.popup.php
+END
+function.assign_debug_info.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/1/trunk/modulos/permisos/smarty/plugins/function.assign_debug_info.php
+END
+modifier.wordwrap.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/1/trunk/modulos/permisos/smarty/plugins/modifier.wordwrap.php
+END
+modifier.regex_replace.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/1/trunk/modulos/permisos/smarty/plugins/modifier.regex_replace.php
+END
+function.html_options.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/1/trunk/modulos/permisos/smarty/plugins/function.html_options.php
+END
+function.counter.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/1/trunk/modulos/permisos/smarty/plugins/function.counter.php
+END
+function.html_select_time.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/1/trunk/modulos/permisos/smarty/plugins/function.html_select_time.php
+END
+shared.make_timestamp.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/1/trunk/modulos/permisos/smarty/plugins/shared.make_timestamp.php
+END
+function.popup_init.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/1/trunk/modulos/permisos/smarty/plugins/function.popup_init.php
+END
+function.debug.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/1/trunk/modulos/permisos/smarty/plugins/function.debug.php
+END
+function.math.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/1/trunk/modulos/permisos/smarty/plugins/function.math.php
+END
+function.fetch.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/1/trunk/modulos/permisos/smarty/plugins/function.fetch.php
+END
+modifier.indent.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/1/trunk/modulos/permisos/smarty/plugins/modifier.indent.php
+END
+modifier.truncate.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/1/trunk/modulos/permisos/smarty/plugins/modifier.truncate.php
+END
+function.html_select_date.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/1/trunk/modulos/permisos/smarty/plugins/function.html_select_date.php
+END
+modifier.upper.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/1/trunk/modulos/permisos/smarty/plugins/modifier.upper.php
+END

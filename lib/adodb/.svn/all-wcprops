@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/111/trunk/lib/adodb
+END
+adodb-php4.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/110/trunk/lib/adodb/adodb-php4.inc.php
+END
+adodb-datadict.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/110/trunk/lib/adodb/adodb-datadict.inc.php
+END
+toexport.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/110/trunk/lib/adodb/toexport.inc.php
+END
+adodb-active-recordx.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/110/trunk/lib/adodb/adodb-active-recordx.inc.php
+END
+adodb-exceptions.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/110/trunk/lib/adodb/adodb-exceptions.inc.php
+END
+adodb-xmlschema.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/110/trunk/lib/adodb/adodb-xmlschema.inc.php
+END
+adodb-csvlib.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/110/trunk/lib/adodb/adodb-csvlib.inc.php
+END
+rsfilter.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/110/trunk/lib/adodb/rsfilter.inc.php
+END
+adodb-xmlschema03.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/110/trunk/lib/adodb/adodb-xmlschema03.inc.php
+END
+xmlschema.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/110/trunk/lib/adodb/xmlschema.dtd
+END
+adodb-pear.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/110/trunk/lib/adodb/adodb-pear.inc.php
+END
+adodb-active-record.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/110/trunk/lib/adodb/adodb-active-record.inc.php
+END
+server.php
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/110/trunk/lib/adodb/server.php
+END
+adodb-errorhandler.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/110/trunk/lib/adodb/adodb-errorhandler.inc.php
+END
+xmlschema03.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/110/trunk/lib/adodb/xmlschema03.dtd
+END
+adodb-error.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/110/trunk/lib/adodb/adodb-error.inc.php
+END
+adodb-iterator.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/110/trunk/lib/adodb/adodb-iterator.inc.php
+END
+license.txt
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/110/trunk/lib/adodb/license.txt
+END
+adodb-perf.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/110/trunk/lib/adodb/adodb-perf.inc.php
+END
+adodb-time.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/110/trunk/lib/adodb/adodb-time.inc.php
+END
+adodb-pager.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/110/trunk/lib/adodb/adodb-pager.inc.php
+END
+tohtml.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/110/trunk/lib/adodb/tohtml.inc.php
+END
+adodb-errorpear.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/110/trunk/lib/adodb/adodb-errorpear.inc.php
+END
+adodb.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/110/trunk/lib/adodb/adodb.inc.php
+END
+pivottable.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/110/trunk/lib/adodb/pivottable.inc.php
+END
+adodb-lib.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/110/trunk/lib/adodb/adodb-lib.inc.php
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/110/trunk/lib/adodb/readme.txt
+END
+adodb-memcache.lib.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/110/trunk/lib/adodb/adodb-memcache.lib.inc.php
+END

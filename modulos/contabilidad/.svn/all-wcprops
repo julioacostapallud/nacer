@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/90/trunk/modulos/contabilidad
+END
+carga_exp.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1/trunk/modulos/contabilidad/carga_exp.php
+END
+ing_egre_listado.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1/trunk/modulos/contabilidad/ing_egre_listado.php
+END
+ing_egre_excel.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1/trunk/modulos/contabilidad/ing_egre_excel.php
+END
+ing_egre_saldos_excel.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1/trunk/modulos/contabilidad/ing_egre_saldos_excel.php
+END
+informe_inco.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1/trunk/modulos/contabilidad/informe_inco.php
+END
+listado_factura_cont_excel.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/1/trunk/modulos/contabilidad/listado_factura_cont_excel.php
+END
+ing_egre_saldos_excel_resumido.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/1/trunk/modulos/contabilidad/ing_egre_saldos_excel_resumido.php
+END
+detalle_servicio.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1/trunk/modulos/contabilidad/detalle_servicio.php
+END
+ingre_egre_admin.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/90/trunk/modulos/contabilidad/ingre_egre_admin.php
+END
+modifica_egreso.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/1/trunk/modulos/contabilidad/modifica_egreso.php
+END
+carga_deposito.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/60/trunk/modulos/contabilidad/carga_deposito.php
+END
+ing_egre_saldos.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/1/trunk/modulos/contabilidad/ing_egre_saldos.php
+END
+notificacion_excel.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/1/trunk/modulos/contabilidad/notificacion_excel.php
+END
+listado_factura_cont.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1/trunk/modulos/contabilidad/listado_factura_cont.php
+END
+informe_inco_excel.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/1/trunk/modulos/contabilidad/informe_inco_excel.php
+END

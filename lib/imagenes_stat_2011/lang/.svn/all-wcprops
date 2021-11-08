@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/lang
+END
+en.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/lang/en.inc.php
+END
+prod.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/lang/prod.inc.php
+END
+de.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/lang/de.inc.php
+END

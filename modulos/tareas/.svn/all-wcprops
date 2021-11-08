@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/1/trunk/modulos/tareas
+END
+cargar_tarea.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/1/trunk/modulos/tareas/cargar_tarea.php
+END
+tareas_modificar.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1/trunk/modulos/tareas/tareas_modificar.php
+END
+tareas_nueva.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/1/trunk/modulos/tareas/tareas_nueva.php
+END
+listado_tareas.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/1/trunk/modulos/tareas/listado_tareas.php
+END
+ds_nuevatarea.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/1/trunk/modulos/tareas/ds_nuevatarea.php
+END
+tareas_designadas.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/1/trunk/modulos/tareas/tareas_designadas.php
+END
+funcion.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/1/trunk/modulos/tareas/funcion.php
+END
+tareas_porhacer.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1/trunk/modulos/tareas/tareas_porhacer.php
+END
+lista_proyectos.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1/trunk/modulos/tareas/lista_proyectos.php
+END
+ds_listado.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/1/trunk/modulos/tareas/ds_listado.php
+END
+subir_archivo_proyectos.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1/trunk/modulos/tareas/subir_archivo_proyectos.php
+END
+cargar_proyectos.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1/trunk/modulos/tareas/cargar_proyectos.php
+END

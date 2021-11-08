@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/1/trunk/modulos/general
+END
+funciones.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/1/trunk/modulos/general/funciones.php
+END
+seleccionar_clientes.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/1/trunk/modulos/general/seleccionar_clientes.php
+END
+contactos.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/1/trunk/modulos/general/contactos.php
+END
+resumen_dolar.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/1/trunk/modulos/general/resumen_dolar.php
+END
+cambiar_dolar.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/1/trunk/modulos/general/cambiar_dolar.php
+END
+ver_contacto_licitacion.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/1/trunk/modulos/general/ver_contacto_licitacion.php
+END
+func_seleccionar_cliente.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1/trunk/modulos/general/func_seleccionar_cliente.php
+END
+ver_contacto.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/1/trunk/modulos/general/ver_contacto.php
+END
+enviar_mensaje.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1/trunk/modulos/general/enviar_mensaje.php
+END
+funciones_contactos.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1/trunk/modulos/general/funciones_contactos.php
+END

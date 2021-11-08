@@ -1,0 +1,335 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011
+END
+imgdata_stars.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/imgdata_stars.inc.php
+END
+imgdata_balls.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/imgdata_balls.inc.php
+END
+jpgraph_log.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpgraph_log.php
+END
+flag_mapping
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/flag_mapping
+END
+VERSION
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/VERSION
+END
+jpgraph_plotline.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpgraph_plotline.php
+END
+jpgraph_table.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpgraph_table.php
+END
+jpgraph_iconplot.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpgraph_iconplot.php
+END
+gd_image.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/gd_image.inc.php
+END
+flags_thumb100x100.dat
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/flags_thumb100x100.dat
+END
+jpgraph_flags.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpgraph_flags.php
+END
+jpgraph_antispam-digits.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpgraph_antispam-digits.php
+END
+jpgraph_gb2312.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpgraph_gb2312.php
+END
+jpgraph_plotmark.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpgraph_plotmark.inc.php
+END
+imgdata_bevels.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/imgdata_bevels.inc.php
+END
+jpgraph_ttf.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpgraph_ttf.inc.php
+END
+jpgraph_scatter.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpgraph_scatter.php
+END
+jpgraph_meshinterpolate.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpgraph_meshinterpolate.inc.php
+END
+jpgraph_date.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpgraph_date.php
+END
+jpgraph_gantt.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpgraph_gantt.php
+END
+jpgraph_mgraph.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpgraph_mgraph.php
+END
+jpgraph.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpgraph.php
+END
+jpg-config.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpg-config.inc.php
+END
+imgdata_diamonds.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/imgdata_diamonds.inc.php
+END
+jpgraph_rgb.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpgraph_rgb.inc.php
+END
+jpgraph_stock.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpgraph_stock.php
+END
+jpgraph_imgtrans.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpgraph_imgtrans.php
+END
+jpgraph_line.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpgraph_line.php
+END
+imageSmoothArc.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/imageSmoothArc.php
+END
+jpgraph_error.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpgraph_error.php
+END
+jpgraph_radar.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpgraph_radar.php
+END
+jpgraph_contour.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpgraph_contour.php
+END
+jpgraph_windrose.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpgraph_windrose.php
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/README
+END
+jpgraph_text.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpgraph_text.inc.php
+END
+imgdata_pushpins.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/imgdata_pushpins.inc.php
+END
+jpgraph_gradient.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpgraph_gradient.php
+END
+jpgraph_errhandler.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpgraph_errhandler.inc.php
+END
+flags.dat
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/flags.dat
+END
+jpgraph_plotband.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpgraph_plotband.php
+END
+jpgraph_pie3d.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpgraph_pie3d.php
+END
+jpgraph_led.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpgraph_led.php
+END
+jpgraph_bar.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpgraph_bar.php
+END
+flags_thumb60x60.dat
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/flags_thumb60x60.dat
+END
+jpgraph_legend.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpgraph_legend.inc.php
+END
+imgdata_squares.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/imgdata_squares.inc.php
+END
+jpgraph_canvtools.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpgraph_canvtools.php
+END
+jpgraph_utils.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpgraph_utils.inc.php
+END
+flags_thumb35x35.dat
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/flags_thumb35x35.dat
+END
+jpgraph_regstat.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpgraph_regstat.php
+END
+jpgraph_theme.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpgraph_theme.inc.php
+END
+jpgraph_canvas.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpgraph_canvas.php
+END
+jpgraph_antispam.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpgraph_antispam.php
+END
+jpgraph_pie.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpgraph_pie.php
+END
+jpgraph_polar.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/79/trunk/lib/imagenes_stat_2011/jpgraph_polar.php
+END

@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/183/trunk/modulos/facturacion
+END
+funciones.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/95/trunk/modulos/facturacion/funciones.php
+END
+efec_nom_listado.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/1/trunk/modulos/facturacion/efec_nom_listado.php
+END
+informe_facturacion_excel.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/1/trunk/modulos/facturacion/informe_facturacion_excel.php
+END
+listado_factura.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/157/trunk/modulos/facturacion/listado_factura.php
+END
+logo_nacer.png
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1/trunk/modulos/facturacion/logo_nacer.png
+END
+prefactura_efectores_listado.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/1/trunk/modulos/facturacion/prefactura_efectores_listado.php
+END
+informe_facturacion.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/1/trunk/modulos/facturacion/informe_facturacion.php
+END
+resumen_prestaciones_excel.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/1/trunk/modulos/facturacion/resumen_prestaciones_excel.php
+END
+listado_beneficiarios_fact.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/95/trunk/modulos/facturacion/listado_beneficiarios_fact.php
+END
+listado_validar_prest.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/14/trunk/modulos/facturacion/listado_validar_prest.php
+END
+debito_credito.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/95/trunk/modulos/facturacion/debito_credito.php
+END
+comprobante_admin.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/168/trunk/modulos/facturacion/comprobante_admin.php
+END
+efec_nom_admin.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/1/trunk/modulos/facturacion/efec_nom_admin.php
+END
+debito_excel.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/1/trunk/modulos/facturacion/debito_excel.php
+END
+factura_pdf_res.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/132/trunk/modulos/facturacion/factura_pdf_res.php
+END
+comprobante_excel.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1/trunk/modulos/facturacion/comprobante_excel.php
+END
+factura_admin.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/125/trunk/modulos/facturacion/factura_admin.php
+END
+resumen_prestaciones.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1/trunk/modulos/facturacion/resumen_prestaciones.php
+END
+Thumbs.db
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/1/trunk/modulos/facturacion/Thumbs.db
+END
+prefactura_efectores_admin.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/1/trunk/modulos/facturacion/prefactura_efectores_admin.php
+END
+factura_excel.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/65/trunk/modulos/facturacion/factura_excel.php
+END
+debito_excel1.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1/trunk/modulos/facturacion/debito_excel1.php
+END
+validar_prest_admin.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/15/trunk/modulos/facturacion/validar_prest_admin.php
+END
+listado_beneficiarios_hist.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/95/trunk/modulos/facturacion/listado_beneficiarios_hist.php
+END
+listado_comp_fact.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/125/trunk/modulos/facturacion/listado_comp_fact.php
+END
+factura_pdf.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/62/trunk/modulos/facturacion/factura_pdf.php
+END
+prestacion_admin.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/183/trunk/modulos/facturacion/prestacion_admin.php
+END
+prestacion_admin_2011.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/167/trunk/modulos/facturacion/prestacion_admin_2011.php
+END
+comprobante_admin_total.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/95/trunk/modulos/facturacion/comprobante_admin_total.php
+END
+factura_clasepdf.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/1/trunk/modulos/facturacion/factura_clasepdf.php
+END
+listado_comprobante.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/38/trunk/modulos/facturacion/listado_comprobante.php
+END

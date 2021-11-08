@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/1/trunk/scripts_automaticos
+END
+monitoreo_asistencia.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1/trunk/scripts_automaticos/monitoreo_asistencia.php
+END
+sincronizacion_asistencias.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/1/trunk/scripts_automaticos/sincronizacion_asistencias.php
+END
+funciones_generales.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/1/trunk/scripts_automaticos/funciones_generales.php
+END
+limpiar_tablas.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/1/trunk/scripts_automaticos/limpiar_tablas.php
+END
