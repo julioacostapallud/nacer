@@ -35,7 +35,7 @@
 <html>
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>SIGEP - Sistema de Gestión del Programa SUMAR - Plan Nacer. Chaco</title>
+	<title>SIGEP - Sistema de Gestiï¿½n del Programa SUMAR - Plan Nacer. Chaco</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 	
 	<link rel='stylesheet' type='text/css' href='<?=$html_root?>/newstyle/bootstrap/css/custom-bootstrap.css'>
@@ -43,12 +43,23 @@
 	<link rel='stylesheet' type='text/css' href='<?=$html_root?>/newstyle/css/menu.css'>
 	
 	<script src='<?=$html_root?>/newstyle/js/jquery-1.8.0.min.js'></script>
+	<script src='<?=$html_root?>/newstyle/js/jquery-3.6.0.min.js'></script>
+
+	<script src='<?=$html_root?>/newstyle/select2/js/select2.min.js'></script>
+	<link rel='stylesheet' type='text/css' href='<?=$html_root?>/newstyle/select2/css/select2.min.css'>	
 	
 	<script src='<?=$html_root?>/lib/dhtmlXCommon.js'></script>
 	<script src='<?=$html_root?>/lib/dhtmlXProtobar.js'></script>
 	<script src='<?=$html_root?>/lib/dhtmlXMenuBar.js'></script>
 	<script src='<?=$html_root?>/lib/dhtmlXTree.js'></script>
+	
+	
+
+
+
 </head>
+	
+	
 
 <?
 
@@ -84,12 +95,12 @@
 			<div class="logos">
 				<img src="<?echo $newstyles_path?>/images/sumar-logo.png" alt="Programa SUMAR" /> 
 				<img src="<?echo $newstyles_path?>/images/redes-logo.png" alt="Redes" /> 
-				<img src="<?echo $newstyles_path?>/images/msal-logo.png" alt="Ministerio de Salud de la Nación" /> 
+				<img src="<?echo $newstyles_path?>/images/msal-logo.png" alt="Ministerio de Salud de la Naciï¿½n" /> 
 			</div>
 			
 			<div class="title">
 				<h1>SIGEP</h1>
-				<p>Sistema de Gestión. Programa SUMAR.</p>
+				<p>Sistema de Gestiï¿½n. Programa SUMAR.</p>
 				<p>Plan Nacer. Provincia del Chaco</p>
 			</div>
 			
@@ -100,7 +111,7 @@
 				<p><i class="icon-calendar"></i> <?=$dia_semana[$dia_s]." ".$dia." de ".$meses[$mes]." de ".$anio?></p>
 				<input id="input_fecha_servidor" type="hidden" value="<?=date("d/m/Y")?>" />
 				<p><i class="icon-user"></i> <?=$_ses_user["name"]?></p>
-				<p><a href="<?=$onclick?>"><i class="icon-off"></i> Cerrar Sesión</a></p>
+				<p><a href="<?=$onclick?>"><i class="icon-off"></i> Cerrar Sesiï¿½n</a></p>
 			</div>
 		</div>
 
@@ -112,7 +123,7 @@
 		<!-- Content IFrame Element -->
 		<?
 			if ($parametros['mode'] == "debug") {  
-				//es porque seleccionó el debugger y tiene que mantener la pagina
+				//es porque seleccionï¿½ el debugger y tiene que mantener la pagina
 				//echo "GET= ".$_GET['menu'];
 				$div=ereg_replace("^$html_root","",$_GET['menu']);
 				//echo " DIV despues de reemplazar= ".$div;

@@ -12,7 +12,7 @@ define("UPLOADS_DIR", ROOT_DIR."/uploads");		// Directorio para uploads
 
 /*******************************************
  ** Headers para que el explorador no guarde
- ** las páginas en cache.
+ ** las pï¿½ginas en cache.
  *******************************************/
 
 header("Cache-control: no-cache");
@@ -41,20 +41,20 @@ $fondo1 = "fondo1.jpg"; //imagen de fondo del encabezado
 //$atrib_tr="bgcolor=$bgcolor_out onmouseover=\"this.style.backgroundColor = '$bgcolor_over'; this.style.color = '$text_color_over'\" onmouseout=\"this.style.backgroundColor = '$bgcolor_out'; this.style.color = '$text_color_out'\"";
 
 /*******************************************
- ** Cantidad de items a mostrar por página.
+ ** Cantidad de items a mostrar por pï¿½gina.
  *******************************************/
 
 $itemspp = 50;
 
 /*******************************************
- ** Configuración de la base de datos.
+ ** Configuraciï¿½n de la base de datos.
  *******************************************/
 
 $db_type = 'postgres8';				// Tipo de base de datos.
 $db_host = 'localhost';		// Host para desarrollo.
 $db_user = 'projekt';				// Usuario.
-$db_password = 'propcp';			// Contraseña.
-$db_name = 'nacer';
+$db_password = 'propcp';			// Contraseï¿½a.
+$db_name = 'nacer2';
 
 
 // IPs permitidas para conectarse al gestion, si el ip no esta aca, se envia un mail
@@ -85,15 +85,15 @@ $db_debug = FALSE;					// Debugger de las consultas.
 
 /*******************************************
  ** Limite de tiempo de inactividad para la
- ** expiración de la sesión (en minutos).
+ ** expiraciï¿½n de la sesiï¿½n (en minutos).
  *******************************************/
 
  $session_timeout = 90;
 
 /*******************************************
  ** Variable $html_root que contiene la ruta
- ** a la raíz de la página.
- ** (Ruta relativa al URL de la página)
+ ** a la raï¿½z de la pï¿½gina.
+ ** (Ruta relativa al URL de la pï¿½gina)
  *******************************************/
 //if (ereg("(/modulos)|(/lib)|(/index.php)|(/menu.php)|(/menu_xml.php)|(/aviso.php)",$_SERVER["SCRIPT_NAME"],$tmp)) {
 //	$tmp=explode($tmp[1].$tmp[2].$tmp[3].$tmp[5].$tmp[6],$_SERVER["SCRIPT_NAME"]);
@@ -109,7 +109,7 @@ unset($tmp);
 
 /*******************************************
  ** Variable $html_footer contiene el
- ** pie de la página.
+ ** pie de la pï¿½gina.
  *******************************************/
 
 $html_footer = "
@@ -125,7 +125,7 @@ $html_footer = "
 
 /*******************************************
  ** Variable $html_header contiene el
- ** encabezamiento de la página.
+ ** encabezamiento de la pï¿½gina.
  *******************************************/
  
 if ($_ses_cambiar_perfil_usuario == 1) 
@@ -141,6 +141,11 @@ $html_header = "<html>
 						<link rel='shortcut icon' href='<?=$html_root?>/newstyle/images/favicon.ico.png' type='image/png' />
 						
 						<script src='$html_root/newstyle/js/jquery-1.8.0.min.js'></script>
+
+						<script src='$html_root/newstyle/js/jquery-3.6.0.min.js'></script>
+						<script src='$html_root/newstyle/select2/js/select2.min.js'></script>
+						<link rel='stylesheet' type='text/css' href='$html_root/newstyle/select2/css/select2.min.css'>
+
 
 						<script languaje='javascript' src='$html_root/newstyle/js/jquery-ui-datepicker-es.js'></script>
 						<script src='$html_root/newstyle/bootstrap/js/bootstrap.min.js'></script>

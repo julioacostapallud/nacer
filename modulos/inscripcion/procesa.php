@@ -114,4 +114,25 @@ if(isset($_POST["id_departamento"]))
 		echo $opciones4;
 		
 	}
+
+	if(isset($_POST["id_localidad_para_calle"]))
+	{
+		
+		$opciones6 = '<option> Seleccione Calle </option>';
+
+		
+		$strConsulta = "select tipo, nombre from uad.calles where idlocalidad = '".$_POST['id_localidad_para_calle']."'";
+		$result =  @pg_exec($strConsulta);
+		
+
+		while( $fila = pg_fetch_array ($result) )
+		{
+		$opciones6.='<option value="'.$fila["tipo"]." ".$fila["nombre"].'">'.$fila["tipo"]." ".$fila["nombre"].'</option>';
+					
+		}
+			
+		echo $opciones6;
+		
+		
+	}
 	?>

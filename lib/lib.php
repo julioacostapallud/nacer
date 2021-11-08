@@ -298,6 +298,8 @@ function form_busqueda($sql,$orden,$filtro,$link_pagina,$where_extra="",$contar=
 						$where .= "CAST ($filter as TEXT) ILIKE '%$keyword%'";
 						else $where .= " (".$seleccion[$filter].")";
 				}
+		} else {
+			$where = "\nWHERE 1 = 2 ";
 		}
 
 		$sql .= " $where";

@@ -17,7 +17,7 @@ $orden = array(
  		"6" => "beneficiarios.nro_doc_tutor",
        );
 $filtro = array(		
-		"numero_doc" => "Número de Documento",		
+		"numero_doc" => "Nï¿½mero de Documento",		
 		"apellido_benef" => "Apellido",
 		"efe_conv.nombreefector" => "Efector",	
 		"nro_doc_madre" => 	"DNI Madre",
@@ -110,7 +110,10 @@ generar_barra_nav($datos_barra);
 	</div>
 
 <?php
+	
+	
 	$result = sql($sql) or die;
+	
 
 //var_dump($sql);
 
@@ -196,19 +199,19 @@ if ($_POST['generarnino']){
 				$id_categoria = $result1->fields['id_categoria'];
 				$contenido.=$id_categoria;	//1	Valores de 5 Menor a 6 Mayor
 				$contenido.=chr(9);
-				$contenido.=$result1->fields['fecha_nacimiento_benef'];	//10	AAAA-MM-DD (Año, Mes, Día)
+				$contenido.=$result1->fields['fecha_nacimiento_benef'];	//10	AAAA-MM-DD (Aï¿½o, Mes, Dï¿½a)
 				$contenido.=chr(9);
 					//$indigena = $result1->fields['indigena'];
 				$contenido.=$result1->fields['indigena'];	//1	S/N
 				$contenido.=chr(9);
 					$id = $result1->fields['id_lengua'];
 					if (is_numeric($id) ==-1) { $id = 0;}
-				$contenido.=$id;	//	Número de identificación de lengua
+				$contenido.=$id;	//	Nï¿½mero de identificaciï¿½n de lengua
 				$contenido.=chr(9);
 	    			$id = $result1->fields['id_tribu'];
 				if (is_numeric($id) == -1) { $id = 0;}
 					//$tribu = str_replace(null,0,$result1->fields['id_tribu']);
-				$contenido.=$id;	//	Número de tribu
+				$contenido.=$id;	//	Nï¿½mero de tribu
 				$contenido.=chr(9);
 				$contenido.=$result1->fields['tipo_doc_madre'];	//5	
 				$contenido.=chr(9);
@@ -268,10 +271,10 @@ if ($_POST['generarnino']){
 				$contenido.=$fecha_pr_parto;
 				$contenido.=chr(9);
 					//$fecha_ef_parto=$result1->fields['fecha_efectiva_parto'];
-				$contenido.= $fecha_ef_parto;	//10	Fecha del parto o de la interrupción del embarazo
+				$contenido.= $fecha_ef_parto;	//10	Fecha del parto o de la interrupciï¿½n del embarazo
 				$contenido.=chr(9);
 					if ($result1->fields['activo'] == 1) {$activo = 'S';} else {$activo = 'N';}
-				$contenido.=$activo;	//1	Si/No – Campo para el borrado logico
+				$contenido.=$activo;	//1	Si/No ï¿½ Campo para el borrado logico
 				$contenido.=chr(9);
 				$contenido.=$result1->fields['calle'];	//40	
 				$contenido.=chr(9);
@@ -310,7 +313,7 @@ if ($_POST['generarnino']){
 				$contenido.=chr(9);
 				$contenido.=$result1->fields['tipo_transaccion']; // TipoNovedad se deja de usar en la version 4.6, el tipo de novedad no se dejo de utilizar, ERROR SE HABILITA NUEVAMENTE
 				$contenido.=chr(9);
-				$contenido.=substr($result1->fields['fecha_carga'],0,10); //FechaNovedad	10	Fecha en la que se produjo la novedad. Fundamentalmente se utilizará para la fecha de baja.
+				$contenido.=substr($result1->fields['fecha_carga'],0,10); //FechaNovedad	10	Fecha en la que se produjo la novedad. Fundamentalmente se utilizarï¿½ para la fecha de baja.
 				$contenido.=chr(9); 
 				$contenido.=$cod_prov;//CodigoProvinciaAltaDatos	2	
 				$contenido.=chr(9); 
@@ -397,7 +400,7 @@ if ($_POST['generarnino']){
 				$contenido.=chr(9);
 				$contenido.=$result1->fields['celular'];
 				$contenido.=chr(9);
-				$contenido.=$fecha_fum;	//10	AAAA-MM-DD (Año, Mes, Día)
+				$contenido.=$fecha_fum;	//10	AAAA-MM-DD (Aï¿½o, Mes, Dï¿½a)
 				$contenido.=chr(9);
 				$contenido.=$result1->fields['obsgenerales'];
 				$contenido.=chr(9);
@@ -418,7 +421,7 @@ if ($_POST['generarnino']){
 				$contenido.=chr(9);
 				$contenido.=chr(0); //UbicacionLongitud (para ir georreferenciando el domicilio de cada beneficiario)
 				$contenido.=chr(9);
-				$contenido.=chr(0); //CUIEEfectorACargo (para ir completando con el efector que tenga a cargo el  beneficiario según su ARS)
+				$contenido.=chr(0); //CUIEEfectorACargo (para ir completando con el efector que tenga a cargo el  beneficiario segï¿½n su ARS)
 				$contenido.=chr(9);
 				$contenido.=chr(0); //ID_MPI (para completar con el identificador que tengan en el Indice Maestro de Personas de la provincia)
 				$contenido.=chr(9);
@@ -484,6 +487,8 @@ if ($_POST['generarnino']){
 		</thead>
   
 	<?
+
+	
 	while (!$result->EOF) {
 		$ref = encode_link("ins_admin.php",array("id_planilla"=>$result->fields['id_beneficiarios']));
 		$onclick_elegir="location.href='$ref'";
@@ -508,8 +513,10 @@ if ($_POST['generarnino']){
 			</td>
 		</tr>
 	<?
+		
 		$result->MoveNext();
     }
+	
 	?>
 </table>
 </form>

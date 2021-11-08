@@ -35,12 +35,12 @@ function calculo_dias($fecha_eq){ // calculamos la diferencia de dias en entero
 		$segundos_diferencia = $timestamp1 - $timestamp2;
 		//echo $segundos_diferencia;
 		
-		//convierto segundos en días
+		//convierto segundos en dï¿½as
 		/*$dias_diferencia = $segundos_diferencia / (60 * 60 * 24);
-		//obtengo el valor absoulto de los días (quito el posible signo negativo)
+		//obtengo el valor absoulto de los dï¿½as (quito el posible signo negativo)
 		$dias_diferencia = abs($dias_diferencia);
 		
-		//quito los decimales a los días de diferencia
+		//quito los decimales a los dï¿½as de diferencia
 		$dias_diferencia = floor($dias_diferencia); */
 		 return ($dias_diferencia); 
 }
@@ -65,6 +65,9 @@ if ($_POST['guardar_editar']=="Guardar"){
     $departamento=$_POST['departamento'];
    	$localidad=$_POST['localidad'];
    	$municipio=$_POST['municipio'];
+	$ubicacionlatitud=$_POST['ubicacionlatitud'];
+	$ubicacuinlongitud=$_POST['ubicacionlongitud'];
+	$precision=$_POST['precision'];
    	$barrio=$_POST['barrio'];
    	$estudios=$_POST['estudios'];
    	$id_categoria=$_POST['id_categoria'];
@@ -102,7 +105,7 @@ if ($_POST['guardar_editar']=="Guardar"){
     	// $fum='1899-12-30';
     // }
     // else $fecha_efectiva_parto='1899-12-30';	
-     //Responsable Padre, menor no embarazada o menor de 9 años (Insert)
+     //Responsable Padre, menor no embarazada o menor de 9 aï¿½os (Insert)
     if($responsable=='PADRE'){
 
     	$estadoest_madre='';
@@ -237,7 +240,7 @@ if ($_POST['guardar_editar']=="Guardar"){
             menor_embarazada=upper('$menor_embarazada'),fecha_diagnostico_embarazo='$fecha_diagnostico_embarazo', semanas_embarazo='$semanas_embarazo',fecha_probable_parto='$fecha_probable_parto', 
             score_riesgo='$scoreriesgo',fum='$fum',
             discv=upper('$discv'),disca=upper('$disca'),discmo=upper('$discmo'),discme=upper('$discme'),otradisc=upper('$otradisc'), obsgenerales=upper('$obsgenerales'),
-			fumador=upper('$fumador'), diabetes=upper('$diabetes'), infarto=upper('$infarto'), acv=upper('$acv'), hta=upper('$hta'), estatinas=upper('$estatinas')
+			fumador=upper('$fumador'), diabetes=upper('$diabetes'), infarto=upper('$infarto'), acv=upper('$acv'), hta=upper('$hta'), estatinas=upper('$estatinas'), ubicacionlatitud='$ubicacionlatitud', ubicacionlongitud='$ubicacionlongitud', precision='$precision'
             WHERE id_beneficiarios=".$id_planilla;
 		
   
@@ -291,6 +294,9 @@ if ($_POST['guardar']=="Guardar Planilla"){
 		   	$barrio=$res_extra1->fields['barrio'];
 			$cod_pos=$res_extra1->fields['cod_pos'];
 			$observaciones=$res_extra1->fields['observaciones'];
+			$ubicacionlatitud=$res_extra1->fields['ubicacionlatitud'];
+			$ubicacionlatitud=$res_extra1->fields['ubicacionlongitud'];
+			$precision=$res_extra1->fields['precision'];
 	 		
 				if ($responsable=='MADRE'){
 		    			$tipo_doc_madre=$res_extra1->fields['tipo_doc_madre'];
@@ -322,7 +328,7 @@ if ($_POST['guardar']=="Guardar Planilla"){
 						}
 			
 			
-			// Menor de 9 años, no muestra la información de embarazo y muestra la información del menor_convive_con_adulto	
+			// Menor de 9 aï¿½os, no muestra la informaciï¿½n de embarazo y muestra la informaciï¿½n del menor_convive_con_adulto	
 			if (($id_categoria=='5') && ($sexo=='F')&& ($menor_embarazada =='N')){
 			$embarazada=none;
 			$mva1=inline;
@@ -330,7 +336,7 @@ if ($_POST['guardar']=="Guardar Planilla"){
 			$memb=none;
 			$menor_convive_con_adulto=$res_extra1->fields['menor_convive_con_adulto'];
 			$responsable=$res_extra1->fields['responsable'];
-			}// Menor de 10 años hasta 18 años, pregunta si la menor esta o no embarazada y la información de menor_convive_con_adulto
+			}// Menor de 10 aï¿½os hasta 18 aï¿½os, pregunta si la menor esta o no embarazada y la informaciï¿½n de menor_convive_con_adulto
 	 		if (($id_categoria=='5') && ($sexo=='F') && ($menor_embarazada =='S')){ 
 			$embarazada=none;
 			$mva1=inline;
@@ -340,7 +346,7 @@ if ($_POST['guardar']=="Guardar Planilla"){
 			$responsable=$res_extra1->fields['responsable'];
 			$menor_embarazada=$res_extra1->fields['menor_embarazada'];
 	 		}
-			//Si esta embarazada muestra la información de embarazo.
+			//Si esta embarazada muestra la informaciï¿½n de embarazo.
 			if ($menor_embarazada=='S'){
 				$embarazada=inline;
 				$fum=Fecha($res_extra1->fields['fum']);
@@ -351,7 +357,7 @@ if ($_POST['guardar']=="Guardar Planilla"){
 				$embarazada=none;
 			}
 		
-			// Menor de 18 años, masculino muestra solo la información menor_convive_con_adulto
+			// Menor de 18 aï¿½os, masculino muestra solo la informaciï¿½n menor_convive_con_adulto
 			if(($id_categoria=='5') && ($sexo=='M')) { 
 				$mva1=inline;
 				$datos_resp=inline;
@@ -360,7 +366,7 @@ if ($_POST['guardar']=="Guardar Planilla"){
 				$menor_convive_con_adulto=$res_extra1->fields['menor_convive_con_adulto'];
 				$responsable=$res_extra1->fields['responsable'];
 
-			}else// Mayor de 18 años Femenino muesta la información de embarazo.
+			}else// Mayor de 18 aï¿½os Femenino muesta la informaciï¿½n de embarazo.
 		 		if (($id_categoria=='6') && ($sexo=='F')){
 					$embarazada=inline;
 					$datos_resp=none;
@@ -370,7 +376,7 @@ if ($_POST['guardar']=="Guardar Planilla"){
 					$fecha_diagnostico_embarazo=Fecha($res_extra1->fields['fecha_diagnostico_embarazo']);
 					$semanas_embarazo=$res_extra1->fields['semanas_embarazo'];
 					$fecha_probable_parto=Fecha($res_extra1->fields['fecha_probable_parto']);		
-		 		}else // Mayor de 18 años Masuclino no muestra la información de embarazo.
+		 		}else // Mayor de 18 aï¿½os Masuclino no muestra la informaciï¿½n de embarazo.
 		 		if ($sexo=='M') {
 					$embarazada=none;
 					$datos_resp=none;
@@ -436,7 +442,7 @@ if ($_POST['guardar']=="Guardar Planilla"){
 	$estatinas=$_POST['estatinas'];
 	$score_riego=$_POST['score_riego'];
 	
-     //Responsable Padre, menor no embarazada o menor de 9 años (Insert)
+     //Responsable Padre, menor no embarazada o menor de 9 aï¿½os (Insert)
     if ($responsable=='PADRE'){
  
     	$estadoest_madre='';
@@ -618,7 +624,7 @@ if ($_POST['guardar']=="Guardar Planilla"){
 		}
 	}
 	
-// Chequeamos que el campo Año Mayor Nivel Tutor No sea ni NULL ni Vacio
+// Chequeamos que el campo Aï¿½o Mayor Nivel Tutor No sea ni NULL ni Vacio
 if(($anio_mayor_nivel === "") or ($anio_mayor_nivel === NULL)){
     $anio_mayor_nivel = 0 ;
 } else {//si no es vacio y no es NULL preguntas si es numerico
@@ -643,7 +649,7 @@ if(($anio_mayor_nivel === "") or ($anio_mayor_nivel === NULL)){
 			calle, numero_calle, piso, dpto, manzana, entre_calle_1, entre_calle_2,
 			telefono, departamento, localidad, municipio, barrio, cod_pos, observaciones, fecha_inscripcion, fecha_carga, usuario_carga,
 			activo, tipo_ficha, responsable, mail, celular, otrotel, estadoest, discv, disca, discmo, discme, otradisc, obsgenerales,
-			fumador, diabetes, infarto, acv, hta, estatinas)
+			fumador, diabetes, infarto, acv, hta, estatinas, ubicacionlatitud, ubicacionlongitud, precision)
 			values
 			('$id_planilla','$estado_envio','$clave_beneficiario',upper('$tipo_transaccion'),upper('$apellido'),upper('$nombre'),
 			upper('$clase_doc'), upper('$tipo_doc'),'$num_doc','$id_categoria',upper('$sexo'),'$fecha_nac',
@@ -656,12 +662,12 @@ if(($anio_mayor_nivel === "") or ($anio_mayor_nivel === NULL)){
         	upper('$calle'),'$numero_calle','$piso',upper('$dpto'), '$manzana',upper('$entre_calle_1'), upper('$entre_calle_2'),
 			'$telefono',upper('$departamenton'),upper('$localidadn'),upper('$municipion'),upper('$barrion'), '$cod_posn',upper('$observaciones'), '$fecha_inscripcion','$fecha_carga',upper('$usuario'),
         	 '1','2', upper('$responsable'),upper('$mail'),'$celular','$otrotel',upper('$estadoest'), upper('$discv'),upper('$disca'),upper('$discmo'), upper('$discme'),upper('$otradisc'),upper('$obsgenerales'),
-			 upper('$fumador'), upper('$diabetes'), upper('$infarto'), upper('$acv'), upper('$hta'), upper('$estatinas'))";
+			 upper('$fumador'), upper('$diabetes'), upper('$infarto'), upper('$acv'), upper('$hta'), upper('$estatinas'), upper('$ubicacionlatitud'), upper('$ubicacionlongitud'), upper('$precision'))";
 
 			// Busca antes de hacer el insert si el beneficiario esta o no en el PUCO
     		if ($res_extra->recordcount()>0) {
     			sql($query, "Error al insertar la Planilla") or fin_pagina();
-    			$accion="INFO-La inscripción ha sido realizada correctamente. El benficiario esta en el PUCO.";       	
+    			$accion="INFO-La inscripciï¿½n ha sido realizada correctamente. El benficiario esta en el PUCO.";       	
     			}
     		if ($res_extra->recordcount()==0){
     			sql($query, "Error al insertar la Planilla") or fin_pagina();
@@ -728,7 +734,10 @@ if ($_POST['b']=="b"){
 	   	$barrio=$res_extra1->fields['barrio'];
 		$cod_pos=$res_extra1->fields['cod_pos'];
 		$observaciones=$res_extra1->fields['observaciones'];
- 		// Menor de 9 años, no muestra la información de embarazo y muestra la información del menor_convive_con_adulto	
+		$ubicacionlatitud=$res_extra1->fields['ubicacionlatitud'];
+		$ubicacionlongitud=$res_extra1->fields['ubicacionlongitud'];
+		$precision=$res_extra1->fields['precision'];
+ 		// Menor de 9 aï¿½os, no muestra la informaciï¿½n de embarazo y muestra la informaciï¿½n del menor_convive_con_adulto	
 		if (($id_categoria=='5') && ($sexo=='F')&& ($menor_embarazada =='N')){
 		$embarazada=none;
 		$mva1=inline;
@@ -764,7 +773,7 @@ if ($_POST['b']=="b"){
    			$estadoest_madre=$res_extra1->fields['estadoest_tutor'];
    			$anio_mayor_nivel_madre=$res_extra1->fields['anio_mayor_nivel_tutor'];	
 			}
- 		} // Menor de 10 años hasta 18 años, pregunta si la menor esta o no embarazada y la información de menor_convive_con_adulto
+ 		} // Menor de 10 aï¿½os hasta 18 aï¿½os, pregunta si la menor esta o no embarazada y la informaciï¿½n de menor_convive_con_adulto
  		if (($id_categoria=='5') && ($sexo=='F') && ($menor_embarazada =='N')){ 
 		$embarazada=none;
 		$mva1=inline;
@@ -801,7 +810,7 @@ if ($_POST['b']=="b"){
    			$estadoest_madre=$res_extra1->fields['estadoest_tutor'];
    			$anio_mayor_nivel_madre=$res_extra1->fields['anio_mayor_nivel_tutor'];	
 			}
-			//Si esta embarazada muestra la información de embarazo.
+			//Si esta embarazada muestra la informaciï¿½n de embarazo.
 			if ($menor_embarazada=='S'){
 				$embarazada=inline;
 				$fum=Fecha($res_extra1->fields['fum']);
@@ -813,7 +822,7 @@ if ($_POST['b']=="b"){
 				$embarazada=none;
 			}
 		}// FIN
-		// Menor de 18 años, masculino muestra solo la información menor_convive_con_adulto
+		// Menor de 18 aï¿½os, masculino muestra solo la informaciï¿½n menor_convive_con_adulto
 		if(($id_categoria=='5') && ($sexo=='M')) { 
 			$mva1=inline;
 			$datos_resp=inline;
@@ -849,7 +858,7 @@ if ($_POST['b']=="b"){
    			$estadoest_madre=$res_extra1->fields['estadoest_tutor'];
    			$anio_mayor_nivel_madre=$res_extra1->fields['anio_mayor_nivel_tutor'];	
 			}
-		}// Mayor de 18 años Femenino muesta la información de embarazo.
+		}// Mayor de 18 aï¿½os Femenino muesta la informaciï¿½n de embarazo.
  		if (($id_categoria=='6') && ($sexo=='F')){
 			$embarazada=inline;
 			$datos_resp=none;
@@ -859,7 +868,7 @@ if ($_POST['b']=="b"){
 			$fecha_diagnostico_embarazo=Fecha($res_extra1->fields['fecha_diagnostico_embarazo']);
 			$semanas_embarazo=$res_extra1->fields['semanas_embarazo'];
 			$fecha_probable_parto=Fecha($res_extra1->fields['fecha_probable_parto']);		
- 		}// Mayor de 18 años Masuclino no muestra la información de embarazo.
+ 		}// Mayor de 18 aï¿½os Masuclino no muestra la informaciï¿½n de embarazo.
  		if (($id_categoria=='6') && ($sexo=='M')) {
 			$embarazada=none;
 			$datos_resp=none;
@@ -932,6 +941,10 @@ if($id_planilla){ ;
 		   	$cod_pos=$resultado->fields['cod_pos'];	 
 		   	$municipio=$resultado->fields['municipio'];
 		   	$barrio=$resultado->fields['barrio'];
+			$ubicacionlatitud=$resultado->fields['ubicacionlatitud'];
+			$ubicacionlongitud=$resultado->fields['ubicacionlongitud'];
+			$precision=$resultado->fields['precision'];
+
 	//estudios del beneficiario  	
 		   	$alfabeta=$resultado->fields['alfabeta'];
 		   	$estudios=$resultado->fields['estudios'];	
@@ -942,7 +955,7 @@ if($id_planilla){ ;
 		   	$id_lengua= $resultado->fields['id_lengua'];
 	//datos de convivencia	
 		   	$menor_convive_con_adulto=$resultado->fields['menor_convive_con_adulto'];
-		// toma el responsable del niño en el caso que conviva con alguien.
+		// toma el responsable del niï¿½o en el caso que conviva con alguien.
 		
 		   	//if($menor_convive_con_adulto=='S'){//verifico si convive con alguien y quien es el responsable
 			 	$responsable=$resultado->fields['responsable'];	   
@@ -1006,7 +1019,7 @@ if($id_planilla){ ;
 }
 
 
-// INICIO Formulario Inicial, no se muestra la información de embarazo, o menor vive con adulto.
+// INICIO Formulario Inicial, no se muestra la informaciï¿½n de embarazo, o menor vive con adulto.
 if(($id_categoria=='') && ($edad == '')){
 
 	$embarazada= none; 
@@ -1014,7 +1027,7 @@ if(($id_categoria=='') && ($edad == '')){
 	$mva1= none;
 	$memb= none;
 	$menor_embarazada=none;
-} elseif (($id_categoria == '6') && ($sexo=='F')){ //Femenino mayor de 10 años, pregunta si esta o no embarazada para mostrar la información de embarazo.
+} elseif (($id_categoria == '6') && ($sexo=='F')){ //Femenino mayor de 10 aï¿½os, pregunta si esta o no embarazada para mostrar la informaciï¿½n de embarazo.
 			
 			$embarazada=none;
 			$datos_resp=none;
@@ -1038,14 +1051,14 @@ if(($id_categoria=='') && ($edad == '')){
 					}else {
 							$embarazada=none;	
 						}
-				}elseif (($id_categoria=='5') && ($sexo=='M')) { // Masculino menor de 19 años, muestra la información de menor vive con adulto y no la de embarazo
+				}elseif (($id_categoria=='5') && ($sexo=='M')) { // Masculino menor de 19 aï¿½os, muestra la informaciï¿½n de menor vive con adulto y no la de embarazo
 						
 						$mva1=inline;
 						$datos_resp=inline;
 						$embarazada=none;
 						$memb=none;
 							
-					} elseif (($id_categoria=='6') && ($sexo=='M')) {// Masculino mayor de 19 años, no muesta la información de embarazo ni tampoco la de menor vive con adulto.
+					} elseif (($id_categoria=='6') && ($sexo=='M')) {// Masculino mayor de 19 aï¿½os, no muesta la informaciï¿½n de embarazo ni tampoco la de menor vive con adulto.
 						
 						$embarazada=none;
 						$datos_resp=none;
@@ -1069,8 +1082,8 @@ if (($id_planilla != '') && ($cambiodom != 'S')){
 	elseif (($id_planilla == '') || ($cambiodom == 'S')) { // Query para traer los paises para luego ser utilizado con AJAX para que no refresque la pagina.
 	$strConsulta = "select id_pais, nombre from uad.pais order by nombre";
 	$result = @pg_exec($strConsulta); 
-	$pais_nac = '<option value="-1"> Seleccione Pais </option>';
-		
+	//$pais_nac = '<option value="-1"> Seleccione Pais </option>';
+	$pais_nac = "";	
 	while( $fila = pg_fetch_array($result) )
 	{
 		$pais_nac.='<option value="'.$fila["id_pais"].'">'.$fila["nombre"].'</option>';
@@ -1136,6 +1149,7 @@ if (($id_planilla != '') && ($cambiodom != 'S')){
 	$fila= pg_fetch_array($result);
 	$opciones4.='<option value="'.$fila["barrio"].'">'.$fila["barrio"].'</option>';
 	$barrion=$fila["barrio"];
+	
 }// FIN
 
 //Muestra los campos de redes solo para los mayores de 20
@@ -1157,7 +1171,7 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 
 	// Script para el manejo de combobox de Departamento - Localidad - Codigo Postal - Municipio y Barrio
 	$(document).ready(function () {
-	
+		
 		getRCVG();
 		
 		$("#departamento").change(function () {
@@ -1180,7 +1194,24 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 					$("#cod_pos").html(opciones);
 				}
 			})
+
+			$.ajax({
+				url: "procesa.php",
+				type: "POST",
+				data: "id_localidad_para_calle=" + $("#localidad").val(),
+				
+			})
+			.done(function(respuesta){
+				$('#calle').html(respuesta);
+			})
+
+			$("#calle").select2({
+			  tags: true
+			});
+
 		});
+
+		
 
 		$("#cod_pos").change(function () {
 			$.ajax({
@@ -1202,7 +1233,10 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 					$("#barrio").html(opciones);
 				}
 			})
+			
 		});
+
+		
 		
 		$(".date-input").datepicker({ 
 			maxDate: "0", 
@@ -1231,7 +1265,59 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 			changeYear: true,
 			onSelect: function () { this.focus();}
 		});
+	
+			
 	});
+
+	// Busqueda de Georeerencia
+
+	function geoloc() {
+
+var url = 'http://api.opencagedata.com/geocode/v1/json?q='     
+// var tipo = document.getElementById('tipo').value
+var key = '566f32feeb0f448d9e6442093e0e5fe3'
+var calle = document.getElementById('calle').value
+var localidadnombre = $('#localidad option:selected').text()
+var numero = document.getElementById('numpuerta').value
+
+if ((calle == "") || (localidadnombre) == "" || (numero == "")) {
+	alert("Los campos CALLE, NUMERO y LOCALIDAD son necesarios para generar la GEORREFERENCIACION")
+} else {
+
+calle = encodeURI(calle)
+localidadnombre = encodeURI(localidadnombre)
+var dir = url.concat(calle,'%20',numero,'+',localidadnombre,'+Chaco+Argentina&key=',key)
+//alert(dir);
+
+fetch(dir)
+  .then(response => response.json())
+  .then(data => {
+	$("#ubicacionlatitud").val(data.results[0].geometry.lat);
+	$("#ubicacionlongitud").val(data.results[0].geometry.lng);
+	$("#precision").val(data.results[0].confidence);
+	if (data.results[0].confidence > 9) {
+		$("#ubicacionlatitud").css("background","#b6ffac");
+		$("#ubicacionlongitud").css("background","#b6ffac");
+	} else {
+		$("#ubicacionlatitud").css("background","#fe9d9d");
+		$("#ubicacionlongitud").css("background","#fe9d9d");
+		alert("LA PRECISION EN LA GEORREERENCIACION NO ES LA DESEADA")
+	}
+	$("#vermapa").css('display','block');
+  })
+}
+
+}
+
+function abrir_mapa() {
+
+var lat = document.getElementById('ubicacionlatitud').value
+var lng = document.getElementById('ubicacionlongitud').value
+				
+url_map = 'https://www.google.com/search?q='.concat(lat,'%2C+',lng)
+
+window.open(url_map)
+}
 	
 	//Busqueda de beneficiarios
 	$(function () {
@@ -1300,7 +1386,7 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 
 					$("#beneficiarios_result").modal('show');
 				} else {
-					$("#modal_message").html("<strong>Atencion!</strong> No se encontraron beneficiarios para el documento ingresado.<br/>Por favor, realice la inscripción correspondiente.");
+					$("#modal_message").html("<strong>Atencion!</strong> No se encontraron beneficiarios para el documento ingresado.<br/>Por favor, realice la inscripciï¿½n correspondiente.");
 					$("#modal_message").removeClass().addClass("alert alert-error")
 					$("#modal_default_buttons").show();
 					$("#modal_success_buttons").hide();
@@ -1353,11 +1439,19 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 		var barrio = document.getElementById('barrio')[document.getElementById('barrio').selectedIndex].innerHTML;
 		document.all.barrion.value = barrio;
 	} // FIN
+
+	//Guarda el nombre del Calle
+	function showcalle() {
+		var calle = document.getElementById('calle')[document.getElementById('calle').selectedIndex].innerHTML;
+		document.all.callen.value = calle;
+	} // FIN
+
+	
 	//Validar Fechas
 	function esFechaValida(fecha) {
 		if(fecha != undefined && fecha.value != "") {
 			if(!/^\d{2}\/\d{2}\/\d{4}$/.test(fecha.value)) {
-				alert("formato de fecha no válido (dd/mm/aaaa)");
+				alert("formato de fecha no vï¿½lido (dd/mm/aaaa)");
 				return false;
 			}
 			var dia = parseInt(fecha.value.substring(0, 2), 10);
@@ -1387,11 +1481,11 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 				};
 				break;
 			default:
-				alert("Fecha introducida errónea");
+				alert("Fecha introducida errï¿½nea");
 				return false;
 			}
 			if(dia > numDias || dia == 0) {
-				alert("Fecha introducida errónea");
+				alert("Fecha introducida errï¿½nea");
 				return false;
 			}
 			return true;
@@ -1436,7 +1530,7 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 		}
 	}
 	
-	//Funcion para verificar si una fecha de inscripcion es válida
+	//Funcion para verificar si una fecha de inscripcion es vï¿½lida
 	function esFechaInsValida(fecha) {
 		var dia = parseInt(fecha.value.substring(0, 2), 10);
 		var mes = parseInt(fecha.value.substring(3, 5), 10);
@@ -1482,7 +1576,7 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 			document.all.apellido.focus();
 			return false;
 		} else {
-			var charpos = document.all.apellido.value.search("[^A-Za-z/ \s/ Ñ ñ]");
+			var charpos = document.all.apellido.value.search("[^A-Za-z/ \s/ ï¿½ ï¿½]");
 			if(charpos >= 0) {
 				alert("El campo Apellido solo permite letras ");
 				document.all.apellido.focus();
@@ -1494,7 +1588,7 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 			document.all.nombre.focus();
 			return false;
 		} else {
-			var charpos = document.all.nombre.value.search("[^A-Za-z/ \s/ Ñ ñ]");
+			var charpos = document.all.nombre.value.search("[^A-Za-z/ \s/ ï¿½ ï¿½]");
 			if(charpos >= 0) {
 				alert("El campo Nombre solo permite letras ");
 				document.all.nombre.focus();
@@ -1531,6 +1625,11 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 			document.all.localidadn.focus();
 			return false;
 		}
+		if(document.all.callen.value == "SELECCIONE CALLE" ) {
+			alert("Debe completar el campo Calle");
+			document.all.callen.focus();
+			return false;
+		}
 		if(document.all.cod_posn.value == "") {
 			alert("Debe completar el campo Codigo Postal");
 			document.all.cod_posn.focus();
@@ -1550,7 +1649,7 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 			document.all.menor_convive_con_adulto.focus();
 			return false;
 		}
-		// Validación Menores de 10 años
+		// Validaciï¿½n Menores de 10 aï¿½os
 		if(ed <= 9) {
 			if(document.all.responsable.value == -1) {
 				alert("Debe completar el campo Datos del responsable");
@@ -1578,7 +1677,7 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 				document.all.apellido_madre.focus();
 				return false;
 			} else {
-				var charpos = document.all.apellido_madre.value.search("[^A-Za-z/ \s/ Ñ ñ]");
+				var charpos = document.all.apellido_madre.value.search("[^A-Za-z/ \s/ ï¿½ ï¿½]");
 				if(charpos >= 0) {
 					alert("El campo apellido del responsable solo permite letras ");
 					document.all.apellido_madre.focus();
@@ -1590,7 +1689,7 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 				document.all.nombre_madre.focus();
 				return false;
 			} else {
-				var charpos = document.all.nombre_madre.value.search("[^A-Za-z/ \s/ Ñ ñ]");
+				var charpos = document.all.nombre_madre.value.search("[^A-Za-z/ \s/ ï¿½ ï¿½]");
 				if(charpos >= 0) {
 					alert("El campo Nombre del responsable solo permite letras ");
 					document.all.nombre_madre.focus();
@@ -1606,8 +1705,8 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 					return false;
 				}
 			}
-		} // FIN Menores de 10 años
-		// Documento Ajeno y Menor de 1 año de Edad.
+		} // FIN Menores de 10 aï¿½os
+		// Documento Ajeno y Menor de 1 aï¿½o de Edad.
 		if(document.all.clase_doc.value == 'A') {
 			if(ed < 1) {
 				var num1 = document.all.nro_doc_madre.value;
@@ -1618,7 +1717,7 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 					return false;
 				}
 			} else {
-				alert("No se puede inscribir un niño mayor de un año con DNI ajeno");
+				alert("No se puede inscribir un niï¿½o mayor de un aï¿½o con DNI ajeno");
 				document.all.num_doc.focus();
 				return false;
 			}
@@ -1632,14 +1731,14 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 			alert("Debe completar el campo fecha probable de parto");
 			return false;
 		}
-		//Control de la fecha de inscripción	
+		//Control de la fecha de inscripciï¿½n	
 		if((esFechaValida(document.all.fecha_inscripcion)) == false) {
 			alert("La fecha de inscripcion no tiene el formato correcto");
 			document.all.fecha_inscripcion.focus();
 			return false;
 		}
 		if((esFechaFutura(document.all.fecha_inscripcion)) == false) {
-			alert("La fecha de inscripción no puede ser mayor que la actual");
+			alert("La fecha de inscripciï¿½n no puede ser mayor que la actual");
 			document.all.fecha_inscripcion.focus();
 			return false;
 		}
@@ -1704,7 +1803,7 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 	//funciones para busqueda abreviada utilizando teclas en la lista que muestra los clientes.
 	var digitos = 10; //cantidad de digitos buscados
 	var puntero = 0;
-	var buffer = new Array(digitos); //declaración del array Buffer
+	var buffer = new Array(digitos); //declaraciï¿½n del array Buffer
 	var cadena = "";
 
 	function buscar_combo(obj) {
@@ -1728,41 +1827,41 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 				}
 			}
 		} //del else de if (event.keyCode == 13)
-		event.returnValue = false; //invalida la acción de pulsado de tecla para evitar busqueda del primer caracter
+		event.returnValue = false; //invalida la acciï¿½n de pulsado de tecla para evitar busqueda del primer caracter
 	} //de function buscar_op_submit(obj)
-	// Función para mostra la información de embarazo y de ser menor la información del adulto.
+	// Funciï¿½n para mostra la informaciï¿½n de embarazo y de ser menor la informaciï¿½n del adulto.
 	function cambiar_patalla() {
-		// Masculino - Menor de 10 años edad no muestra la información de embarazo, muestra la información de menor vive con adulto 
-		//y pide la información del adulto aunque el menor no viva con el. 
+		// Masculino - Menor de 10 aï¿½os edad no muestra la informaciï¿½n de embarazo, muestra la informaciï¿½n de menor vive con adulto 
+		//y pide la informaciï¿½n del adulto aunque el menor no viva con el. 
 		if((document.all.sexo.value == 'M') && (document.all.id_categoria.value == '5')) {
 			document.all.cat_emb.style.display = 'none';
 			document.all.cat_nino.style.display = 'inline';
 			document.all.mva.style.display = 'inline';
 			document.all.memb.style.display = 'none';
 		} //fin
-		// Masculino - Mayor de edad 10 años no muestra la información de embarazo, no muestra la información de menor vive con adulto. 
+		// Masculino - Mayor de edad 10 aï¿½os no muestra la informaciï¿½n de embarazo, no muestra la informaciï¿½n de menor vive con adulto. 
 		if((document.all.sexo.value == 'M') && (document.all.id_categoria.value == '6')) {
 			document.all.cat_emb.style.display = 'none';
 			document.all.cat_nino.style.display = 'none';
 			document.all.mva.style.display = 'none';
 			document.all.memb.style.display = 'none';
 		} //fin
-		// Femenino - Menor de 9 años no muestra la información de embarazo, muestra la información de menor vive con adulto 
-		//y pide la información del adulto aunque el menor no viva con el. 
+		// Femenino - Menor de 9 aï¿½os no muestra la informaciï¿½n de embarazo, muestra la informaciï¿½n de menor vive con adulto 
+		//y pide la informaciï¿½n del adulto aunque el menor no viva con el. 
 		if((document.all.sexo.value == 'F') && (document.all.edades.value <= 9)) {
 			document.all.cat_emb.style.display = 'none';
 			document.all.cat_nino.style.display = 'inline';
 			document.all.mva.style.display = 'inline';
 			document.all.memb.style.display = 'none';
 		}
-		// Femenino - Mayor de 10 años puede o no estar embarazada, muestra la información de menor vive con adulto
-		// pide la información del adulto aunque el menor no viva con el y pregunta si esta o no embarazada.
+		// Femenino - Mayor de 10 aï¿½os puede o no estar embarazada, muestra la informaciï¿½n de menor vive con adulto
+		// pide la informaciï¿½n del adulto aunque el menor no viva con el y pregunta si esta o no embarazada.
 		if((document.all.sexo.value == 'F') && (document.all.edades.value >= 10)) {
 			document.all.cat_emb.style.display = 'none';
 			document.all.cat_nino.style.display = 'inline';
 			document.all.mva.style.display = 'inline';
 			document.all.memb.style.display = 'inline';
-			// Si esta embarazada muestra la información del embarazo
+			// Si esta embarazada muestra la informaciï¿½n del embarazo
 			if(document.all.menor_embarazada.value == 'S') {
 				document.all.cat_emb.style.display = 'inline';
 			} //fin
@@ -1771,14 +1870,14 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 				document.all.memb.style.display = 'inline';
 			}
 		} //fin
-		// Femenino - Mayor de 10 años puede o no estar embarazada,pregunta si esta o no 
-		// embarazada para pedir la información de embarazo, no muestra la información de menor vive con adulto. 
+		// Femenino - Mayor de 10 aï¿½os puede o no estar embarazada,pregunta si esta o no 
+		// embarazada para pedir la informaciï¿½n de embarazo, no muestra la informaciï¿½n de menor vive con adulto. 
 		if((document.all.sexo.value == 'F') && (document.all.id_categoria.value == '6')) {
 			document.all.cat_emb.style.display = 'none';
 			document.all.cat_nino.style.display = 'none';
 			document.all.mva.style.display = 'none';
 			document.all.memb.style.display = 'inline';
-			// Si esta embarazada muestra la información del embarazo
+			// Si esta embarazada muestra la informaciï¿½n del embarazo
 			if(document.all.menor_embarazada.value == 'S') {
 				document.all.cat_emb.style.display = 'inline';
 			} //fin
@@ -1799,7 +1898,7 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 		}
 		
 	} // FIN Cambiar_Patalla()
-	// Calculo de días para fecha de Nacimiento Mayor a Fecha Actual
+	// Calculo de dï¿½as para fecha de Nacimiento Mayor a Fecha Actual
 	function fechaNacAct() {
 		var d1 = $('#fecha_nac').val().split("/");
 		var dat1 = new Date(d1[2], parseFloat(d1[1]) - 1, parseFloat(d1[0]));
@@ -1818,15 +1917,15 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 		var dias = Math.floor(fin / (1000 * 60 * 60 * 24))
 		return dias;
 	} // FIN
-	// Valida que la Fecha Probable de Parto no supere los 45 días después del Parto
+	// Valida que la Fecha Probable de Parto no supere los 45 dï¿½as despuï¿½s del Parto
 	function mostrarDias() {
 		if(verificaFPP() >= '46') {
-			alert("No se puede Inscribir porque supero los 45 días después del Parto");
+			alert("No se puede Inscribir porque supero los 45 dï¿½as despuï¿½s del Parto");
 			document.all.fecha_probable_parto.focus();
 			return false;
 		}
 	} // FIN
-	// Fecha Diagnostico de Embarazo no puede ser superior a la Fecha de Inscripción
+	// Fecha Diagnostico de Embarazo no puede ser superior a la Fecha de Inscripciï¿½n
 	function validaFDE() {
 		var d1 = $('#fecha_diagnostico_embarazo').val().split("/");
 		var dat1 = new Date(d1[2], parseFloat(d1[1]) - 1, parseFloat(d1[0]));
@@ -1837,7 +1936,7 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 		return dias;
 	} // FIN
 	//calcular la edad de una persona 
-	//recibe la fecha como un string en formato español 
+	//recibe la fecha como un string en formato espaï¿½ol 
 	//devuelve un entero con la edad. Devuelve false en caso de que la fecha sea incorrecta o mayor que el dia actual 
 	function calcular_edad(fecha) {
 		//calculo la fecha de hoy 
@@ -1866,18 +1965,18 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 		var dia
 		dia = parseInt(array_fecha[0], 10);
 		if(isNaN(dia)) return false
-		//si el año de la fecha que recibo solo tiene 2 cifras hay que cambiarlo a 4 
+		//si el aï¿½o de la fecha que recibo solo tiene 2 cifras hay que cambiarlo a 4 
 		if(ano <= 99) {
 			ano += 1900;
 		}
-		//resto los años de las dos fechas 
+		//resto los aï¿½os de las dos fechas 
 		anos = anohoy - ano;
-		//si resto los meses y me da menor que 0 entonces no ha cumplido años. Si da mayor si ha cumplido 
+		//si resto los meses y me da menor que 0 entonces no ha cumplido aï¿½os. Si da mayor si ha cumplido 
 		if(meshoy < mes) {
 			anos = anos - 1;
 		}
 		//entonces es que eran iguales. miro los dias 
-		//si resto los dias y me da menor que 0 entonces no ha cumplido años. Si da mayor o igual si ha cumplido 
+		//si resto los dias y me da menor que 0 entonces no ha cumplido aï¿½os. Si da mayor o igual si ha cumplido 
 		if((meshoy = mes) && (diahoy < dia)) {
 			anos = anos - 1;
 		}
@@ -1887,29 +1986,29 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 	function edad(Fecha) {
 		ed = calcular_edad(Fecha);
 		if(fechaNacAct() <= '-1') {
-			//alert("La Fecha de Nacimiento no puede ser mayor al día de hoy");
+			//alert("La Fecha de Nacimiento no puede ser mayor al dï¿½a de hoy");
 			//document.all.fecha_nac.focus();
 			return false;
 		}
-		//si es mayor de 10 años categoria 6
+		//si es mayor de 10 aï¿½os categoria 6
 		if(ed >= 10) {
 			document.getElementById('id_categoria').value = '6';
 			document.getElementById("edades").value = ed;
 			if(document.all.clase_doc.value == 'A') {
-				alert("Mayor de 1 año, el documento debe ser Propio")
+				alert("Mayor de 1 aï¿½o, el documento debe ser Propio")
 				document.all.clase_doc.focus();
 			}
 		}
-		//si es menor de 10 años categoria 5
+		//si es menor de 10 aï¿½os categoria 5
 		if(ed <= 9) {
 			document.getElementById('id_categoria').value = '5';
 			document.getElementById("edades").value = ed;
 			if((ed >= 1) && (document.all.clase_doc.value == 'A')) {
-				alert("Niño mayor de 1 año, el documento debe ser Propio")
+				alert("Niï¿½o mayor de 1 aï¿½o, el documento debe ser Propio")
 				document.all.clase_doc.focus();
 			}
 		}
-	} //FIN calculo de edad y categoría
+	} //FIN calculo de edad y categorï¿½a
 	//Desarma la fecha para calcular la FPP
 	var aFinMes = new Array(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
 
@@ -2040,7 +2139,7 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 			valid = false;
 		}
 		if (!valid) {
-			alert("Tensión Arterial inválida");
+			alert("Tensiï¿½n Arterial invï¿½lida");
 			document.all.hta.focus();
 		} else {
 			var chk = $('#redes input:radio:checked').length;
@@ -2103,7 +2202,7 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 	?>
 	
 	<div class="alert <?=$msj_class?>">
-		<button class="close" data-dismiss="alert" type="button">×</button>
+		<button class="close" data-dismiss="alert" type="button">ï¿½</button>
 		<?=$msj[1]?>
 	</div>
 	
@@ -2146,8 +2245,8 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 	<p class="legend"><?= ($id_planilla)? "Editar Beneficiario <small>#" . $clave_beneficiario . "</small>" : "Nuevo Beneficiario" ?></p>
 
 	<div class="alert">
-		<button type="button" class="close" data-dismiss="alert">×</button>
-		<strong>Atención!</strong> Al ingresar valores numéricos no utilice separadores de miles.
+		<button type="button" class="close" data-dismiss="alert">ï¿½</button>
+		<strong>Atenciï¿½n!</strong> Al ingresar valores numï¿½ricos no utilice separadores de miles.
 	</div>
 	
 	<div class="row-fluid">
@@ -2156,8 +2255,8 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 			<select name="tipo_transaccion" onKeypress="buscar_combo(this);" onblur="borrar_buffer();" 
 				onchange="borrar_buffer();document.forms[0].submit()" 
 				<? if ($trans == 'Borrado')echo "disabled"?>>
-				<option value='A' <?if ($tipo_transaccion=='A') echo "selected"?>>Inscripción</option>
-				<option value='M'<?if ($tipo_transaccion=='M') echo "selected"?>>Modificación</option>
+				<option value='A' <?if ($tipo_transaccion=='A') echo "selected"?>>Inscripciï¿½n</option>
+				<option value='M'<?if ($tipo_transaccion=='M') echo "selected"?>>Modificaciï¿½n</option>
 			</select>	
 		</div>
 	</div>
@@ -2177,7 +2276,7 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 		</div>
 	
 		<div class="span3">
-			<label>Número de Documento:</label>
+			<label>Nï¿½mero de Documento:</label>
 			<input type="text" value="<?=$num_doc?>" name="num_doc" onblur="CheckDNI(this);" <? 
 				if (($id_planilla) and ($tipo_transaccion != "M"))echo "disabled"?>
 				onkeypress="return pulsar(event)" >
@@ -2207,12 +2306,12 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 	</div>
 	<div class="row-fluid">
 		<div class="span3">
-			<label>Correo Electrónico:</label>
+			<label>Correo Electrï¿½nico:</label>
 			<input type="text" size="35" name="mail" value="<?=$mail?>" onkeypress="return pulsar(event)" <?php if (($id_planilla) and ($tipo_transaccion != "M"))echo "disabled"?>>
 		</div>
 		
 		<div class="span3">
-			<label>Teléfono Celular:</label>
+			<label>Telï¿½fono Celular:</label>
 			<input type="text" size="30" name="celular" value="<?=$celular?>" onkeypress="return pulsar(event)" <?php if (($id_planilla) and ($tipo_transaccion != "M"))echo "disabled"?>>
 		</div>
 	</div>
@@ -2254,7 +2353,7 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 	
 	<div class="row-fluid">
 		<div class="span3">
-			<label>¿Pertenece a algún Pueblo Originario?</label>
+			<label>ï¿½Pertenece a algï¿½n Pueblo Originario?</label>
 			<label class="radio">
 				<input type="radio" name="indigena" value="N" 
 					<?php if (($id_planilla) and ($tipo_transaccion != "M")) echo "disabled" ?> 
@@ -2359,7 +2458,7 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 		</div>
 		
 		<div class="span3">
-			<label>Años Mayor Nivel:</label>
+			<label>Aï¿½os Mayor Nivel:</label>
 			<input type="text" size="30" value='<?if ($anio_mayor_nivel == '') {echo '0';} else {echo $anio_mayor_nivel;} ?>' name="anio_mayor_nivel" <?php if (($id_planilla) and ($tipo_transaccion != "M"))echo "disabled"?>>
 		</div>
 	</div>
@@ -2390,57 +2489,6 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 	
 	<div class="row-fluid">
 		<div class="span3">
-			<label>Calle:</label>
-			<input type="text" size="30" value="<?=$calle?>" name="calle" onkeypress="return pulsar(event)" <?php if (($id_planilla) and ($tipo_transaccion != "M"))echo "disabled"?>>
-		</div>
-		
-		<div class="span3">
-			<label>N° de Puerta:</label>
-			<input type="text" size="15" value="<?=$numero_calle?>" name="numero_calle" onkeypress="return pulsar(event)" <?php if (($id_planilla) and ($tipo_transaccion != "M"))echo "disabled"?>>
-		</div>
-	</div>
-
-	<div class="row-fluid">
-		<div class="span3">
-			<label>Piso:</label>
-			<input type="text" size="15" value="<?=$piso?>" name="piso" onkeypress="return pulsar(event)" <?php if (($id_planilla) and ($tipo_transaccion != "M"))echo "disabled"?>>         	
-		</div>
-		
-		<div class="span3">
-			<label>Depto:</label>
-			<input type="text" size="10" value="<?=$dpto?>" name="dpto" onkeypress="return pulsar(event)" <?php if (($id_planilla) and ($tipo_transaccion != "M"))echo "disabled"?>>
-		</div>
-		
-		<div class="span3">
-			<label>Mz:</label>
-			<input type="text" size="10" value="<?=$manzana?>" name="manzana" onkeypress="return pulsar(event)" <?php if (($id_planilla) and ($tipo_transaccion != "M"))echo "disabled"?>>         	
-		</div>
-	</div>
-	
-	<div class="row-fluid">
-		<div class="span3">
-			<label>Entre Calle 1:</label>
-			<input type="text" size="15" value="<?=$entre_calle_1?>" name="entre_calle_1" onkeypress="return pulsar(event)" <?php if (($id_planilla) and ($tipo_transaccion != "M"))echo "disabled"?>>
-		</div>
-		
-		<div class="span3">
-			<label>Entre Calle 2:</label>
-			<input type="text" size="15" value="<?=$entre_calle_2?>" name="entre_calle_2" onkeypress="return pulsar(event)" <?php if (($id_planilla) and ($tipo_transaccion != "M"))echo "disabled"?>>         	
-		</div>
-		
-		<div class="span3">
-			<label>Telefono:</label>
-			<input type="text" size="30" value="<?=$telefono?>" name="telefono" onkeypress="return pulsar(event)" <?php if (($id_planilla) and ($tipo_transaccion != "M"))echo "disabled"?>>         	
-		</div>
-		
-		<div class="span3">
-			<label>Otro (ej: vecino)</label>
-			<input type="text" size="30" name="otrotel" value="<?=$otrotel?>" onkeypress="return pulsar(event)" <?php if (($id_planilla) and ($tipo_transaccion != "M"))echo "disabled"?>>
-		</div>
-	</div>
-	
-	<div class="row-fluid">
-		<div class="span3">
 			<label>Departamento:</label>
 			<input type="hidden" name="departamenton" value="<?=$departamenton?>"> 
 			<select id="departamento" name="departamento" onchange="showdepartamento();" <?php if (($id_planilla) and ($tipo_transaccion != "M"))echo "disabled"?>><?php echo $departamento;?></select>
@@ -2455,22 +2503,80 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 			<input type="hidden" name="cod_posn" value="<?=$cod_posn?>"> 
 			<select id="cod_pos" name="cod_pos" onchange="showcodpos();" <?php if (($id_planilla) and ($tipo_transaccion != "M"))echo "disabled"?>><?php echo $opciones5; ?></select>
 		</div>
-	</div>
-	
-	<div class="row-fluid">
 		<div class="span3">
 			<label>Municipio:</label>
 			<input type="hidden" name="municipion" value="<?=$municipion?>">
 			<select id="municipio" name="municipio" onchange="showmunicipio();" <?php if (($id_planilla) and ($tipo_transaccion != "M"))echo "disabled"?>><?php echo $opciones3; ?></select>
 		</div>
-		
+	</div>
+	<div class="row-fluid">
+		<div class="span3">
+			<label>Calle:</label>
+			<input type="hidden" name= "callen" value="<?=$callen?>"> 
+			<select class="seleccionador" name="calle" onchange="showcalle();" id="calle" <?php if (($id_planilla) and ($tipo_transaccion != "M"))echo "disabled"?>><?php echo "<option value='".$calle."'>".$calle."</option>"; echo $opciones6; ?></select>
+		</div>
+		<div class="span3">
+			<label>Nï¿½ de Puerta:</label>
+			<input id="numpuerta" type="text" size="15" value="<?=$numero_calle?>" name="numero_calle" onkeypress="return pulsar(event)" <?php if (($id_planilla) and ($tipo_transaccion != "M"))echo "disabled"?>>
+		</div>
+		<div class="span3">
+			<label>Piso:</label>
+			<input type="text" size="15" value="<?=$piso?>" name="piso" onkeypress="return pulsar(event)" <?php if (($id_planilla) and ($tipo_transaccion != "M"))echo "disabled"?>>         	
+		</div>
+		<div class="span3">
+			<label>Depto:</label>
+			<input type="text" size="10" value="<?=$dpto?>" name="dpto" onkeypress="return pulsar(event)" <?php if (($id_planilla) and ($tipo_transaccion != "M"))echo "disabled"?>>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span3">
+			<label>Entre Calle 1:</label>
+			<input type="text" size="15" value="<?=$entre_calle_1?>" name="entre_calle_1" onkeypress="return pulsar(event)" <?php if (($id_planilla) and ($tipo_transaccion != "M"))echo "disabled"?>>
+		</div>
+		<div class="span3">
+			<label>Entre Calle 2:</label>
+			<input type="text" size="15" value="<?=$entre_calle_2?>" name="entre_calle_2" onkeypress="return pulsar(event)" <?php if (($id_planilla) and ($tipo_transaccion != "M"))echo "disabled"?>>         	
+		</div>
+		<div class="span3">
+			<label>Telefono:</label>
+			<input type="text" size="30" value="<?=$telefono?>" name="telefono" onkeypress="return pulsar(event)" <?php if (($id_planilla) and ($tipo_transaccion != "M"))echo "disabled"?>>         	
+		</div>
+	</div>
+	<div class="row-fluid">
 		<div class="span3">
 			<label>Barrio:</label>
 			<input type="hidden" name="barrion" value="<?=$barrion?>">
 			<select id="barrio" name="barrio" onchange="showbarrio();" <?php if (($id_planilla) and ($tipo_transaccion != "M"))echo "disabled"?>><?php echo $opciones4; ?></select>
 		</div>
+		<div class="span3">
+			<label>Mz:</label>
+			<input type="text" size="10" value="<?=$manzana?>" name="manzana" onkeypress="return pulsar(event)" <?php if (($id_planilla) and ($tipo_transaccion != "M"))echo "disabled"?>>         	
+		</div>
+		<div class="span3">
+			<label>Otro (ej: vecino)</label>
+			<input type="text" size="30" name="otrotel" value="<?=$otrotel?>" onkeypress="return pulsar(event)" <?php if (($id_planilla) and ($tipo_transaccion != "M"))echo "disabled"?>>
+		</div>
 	</div>
-	
+	<div class="row-fluid">
+		<div class="span3">
+			<label style="color:white;"> . </label>
+			<input type="button" class="btn btn-primary" onclick="geoloc();" value="Geolocalizar" id="geolocalizar_button" name="geolocalizar_button" style="display:<?php if (($id_planilla) and ($tipo_transaccion != "M")) echo "none"?>">
+		</div>
+		<div class="span3">
+				<label style="color:white;"> .</label>
+		    	<input type="button" class="btn btn-primary" style="Display:none;" id="vermapa" value="Ver en Mapa" onclick="abrir_mapa();">
+		</div>
+		<div class="span3">
+		    	<label>Latitud:</label>
+		    	<input type="text" size="11" value="<?=$ubicacionlatitud?>" name="ubicacionlatitud" id="ubicacionlatitud" onkeypress="return pulsar(event)" <?php if (($id_planilla) and ($tipo_transaccion != "M"))echo "disabled"?>>
+		</div>
+		<div class="span3">
+		    	<label>Longitud:</label>
+			<input type="text" size="11" value="<?=$ubicacionlongitud?>" name="ubicacionlongitud" id="ubicacionlongitud" onkeypress="return pulsar(event)" <?php if (($id_planilla) and ($tipo_transaccion != "M"))echo "disabled"?>>
+			<input style="display:none;" type="text" size="11" value="<?=$precision?>" name="precision" id="precision" onkeypress="return pulsar(event)" <?php if (($id_planilla) and ($tipo_transaccion != "M"))echo "disabled"?>>
+		</div>
+				
+	</div>
 	<div class="row-fluid">
 		<div class="span6">
 			<label>Observaciones:</label>
@@ -2531,7 +2637,7 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 			</div>
 			
 			<p class="legend form-title">
-				Alfabetización del Responsable
+				Alfabetizaciï¿½n del Responsable
 			</p>
 			
 			<div class="row-fluid">
@@ -2573,7 +2679,7 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 				</div>
 				
 				<div class="span3">
-					<label>Años en el Mayor Nivel:</label>
+					<label>Aï¿½os en el Mayor Nivel:</label>
 					<input type="text" size="30" value='<?if ($anio_mayor_nivel_madre == '') {echo '0';} else {echo $anio_mayor_nivel_madre;} ?>' name="anio_mayor_nivel_madre" <?php if (($id_planilla) and ($tipo_transaccion != "M"))echo "disabled"?>>
 				</div>
 			</div>
@@ -2790,7 +2896,7 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 		<div class="form-actions">
 			<h4>Guardar Planilla:</h4>
 			<div class="alert alert-error">
-				<strong>Atención:</strong> Por favor, verifique todos los datos antes de guardar.
+				<strong>Atenciï¿½n:</strong> Por favor, verifique todos los datos antes de guardar.
 			</div>
 			<input class="btn btn-primary btn-large" type='submit' name='guardar' value='Guardar Planilla' onclick="return control_nuevos()" title="Guardar datos de la Planilla" >
 			
@@ -2807,7 +2913,7 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 		<div class="form-actions">
 			<h4>Editar Datos:</h4>
 			<div class="alert alert-error">
-				<strong>Atención:</strong> Por favor, verifique todos los datos antes de guardar.
+				<strong>Atenciï¿½n:</strong> Por favor, verifique todos los datos antes de guardar.
 			</div>
 			
 			<input class="btn btn-primary btn-large" type="submit" name="guardar_editar" value="Guardar" title="Guardar" <?php if ($tipo_transaccion != "M") echo "disabled"?> onclick="return control_nuevos()">
@@ -2837,7 +2943,7 @@ $directorio_base=trim(substr(ROOT_DIR, strrpos(ROOT_DIR,chr(92))+1, strlen(ROOT_
 <!-- Modal -->
 <div class="modal hide" id="beneficiarios_result" tabindex="-1" aria-hidden="true">
 	<div class="modal-header">
-		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">ï¿½</button>
 		<h4>Buscar Beneficiarios</h4>
 	</div>
 	<div class="modal-body">

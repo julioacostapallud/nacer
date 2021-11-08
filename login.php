@@ -11,7 +11,7 @@
 <head>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=8,chrome=1">
-	<title>Bienvenido a SIGEP - Sistema de Gestión del Programa SUMAR - Plan Nacer. Chaco</title>
+	<title>Bienvenido a SIGEP - Sistema de Gestiï¿½n del Programa SUMAR - Plan Nacer. Chaco</title>
 	<link rel='shortcut icon' href='newstyle/images/favicon.ico.png' type='image/png' />
 
 	<link rel='stylesheet' type='text/css' href='newstyle/bootstrap/css/custom-bootstrap.css'>
@@ -70,6 +70,7 @@
 	</div>
 	
 	<script src='newstyle/js/jquery-1.8.0.min.js'></script>
+	<script src='newstyle/js/jquery-3.6.0.min.js'></script>
 	<script src='newstyle/js/jquery-nivo-slider.pack.js'></script>
 	
 	<script>
